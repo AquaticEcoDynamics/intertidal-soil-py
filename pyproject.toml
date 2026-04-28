@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "intertidal-soil"
+version = "0.1.0"
+description = "Coupled heat and moisture model for intertidal soil columns"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [
+    {name = "AED Group, The University of Western Australia"},
+]
+dependencies = [
+    "numpy>=1.22",
+    "pandas>=1.4",
+]
+
+[project.optional-dependencies]
+plot = ["matplotlib>=3.5"]
+gif = ["matplotlib>=3.5", "Pillow>=9.0"]
+dev = [
+    "pytest>=7.0",
+    "matplotlib>=3.5",
+    "Pillow>=9.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["intertidal_soil*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
