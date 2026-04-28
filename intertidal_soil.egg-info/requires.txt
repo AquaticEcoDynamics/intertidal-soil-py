@@ -1,0 +1,14 @@
+numpy>=1.22
+pandas>=1.4
+
+[dev]
+pytest>=7.0
+matplotlib>=3.5
+Pillow>=9.0
+
+[gif]
+matplotlib>=3.5
+Pillow>=9.0
+
+[plot]
+matplotlib>=3.5
